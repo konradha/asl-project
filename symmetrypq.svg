@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600">
+  <!-- Full matrices -->
+  <g transform="translate(50, 50)">
+    <rect x="0" y="0" width="150" height="150" fill="none" stroke="black" />
+    <text x="-30" y="75" text-anchor="middle" dominant-baseline="middle">P =</text>
+    <text x="75" y="175" text-anchor="middle">Full Matrix P</text>
+    
+    <!-- Diagonal elements (now explicitly shown as zero) -->
+    <rect x="10" y="10" width="40" height="40" fill="white" stroke="red" stroke-width="2" />
+    <text x="30" y="30" text-anchor="middle" dominant-baseline="middle" fill="red">0</text>
+    <rect x="55" y="55" width="40" height="40" fill="white" stroke="red" stroke-width="2" />
+    <text x="75" y="75" text-anchor="middle" dominant-baseline="middle" fill="red">0</text>
+    <rect x="100" y="100" width="40" height="40" fill="white" stroke="red" stroke-width="2" />
+    <text x="120" y="120" text-anchor="middle" dominant-baseline="middle" fill="red">0</text>
+    
+    <!-- Upper and lower triangular elements -->
+    <rect x="55" y="10" width="40" height="40" fill="lightblue" />
+    <rect x="100" y="10" width="40" height="40" fill="lightblue" />
+    <rect x="100" y="55" width="40" height="40" fill="lightblue" />
+    
+    <rect x="10" y="55" width="40" height="40" fill="lightyellow" />
+    <rect x="10" y="100" width="40" height="40" fill="lightyellow" />
+    <rect x="55" y="100" width="40" height="40" fill="lightyellow" />
+  </g>
+  
+  <g transform="translate(250, 50)">
+    <rect x="0" y="0" width="150" height="150" fill="none" stroke="black" />
+    <text x="-30" y="75" text-anchor="middle" dominant-baseline="middle">Q =</text>
+    <text x="75" y="175" text-anchor="middle">Full Matrix Q</text>
+    
+    <!-- Diagonal elements -->
+    <rect x="10" y="10" width="40" height="40" fill="white" stroke="red" stroke-width="2" />
+    <text x="30" y="30" text-anchor="middle" dominant-baseline="middle" fill="red">0</text>
+    <rect x="55" y="55" width="40" height="40" fill="white" stroke="red" stroke-width="2" />
+    <text x="75" y="75" text-anchor="middle" dominant-baseline="middle" fill="red">0</text>
+    <rect x="100" y="100" width="40" height="40" fill="white" stroke="red" stroke-width="2" />
+    <text x="120" y="120" text-anchor="middle" dominant-baseline="middle" fill="red">0</text>
+    
+    <!-- Upper and lower triangular elements -->
+    <rect x="55" y="10" width="40" height="40" fill="lightgreen" />
+    <rect x="100" y="10" width="40" height="40" fill="lightgreen" />
+    <rect x="100" y="55" width="40" height="40" fill="lightgreen" />
+    
+    <rect x="10" y="55" width="40" height="40" fill="lightpink" />
+    <rect x="10" y="100" width="40" height="40" fill="lightpink" />
+    <rect x="55" y="100" width="40" height="40" fill="lightpink" />
+  </g>
+  
+  <!-- Upper triangular forms -->
+  <g transform="translate(480, 50)">
+    <rect x="0" y="0" width="150" height="150" fill="none" stroke="black" />
+    <text x="-40" y="75" text-anchor="middle" dominant-baseline="middle">P' =</text>
+    <text x="75" y="175" text-anchor="middle">Upper Triangular P</text>
+    
+    <!-- Upper triangular elements -->
+    <rect x="10" y="10" width="40" height="40" fill="white" stroke="red" stroke-width="2" />
+    <text x="30" y="30" text-anchor="middle" dominant-baseline="middle" fill="red">0</text>
+    <rect x="55" y="10" width="40" height="40" fill="lightblue" />
+    <rect x="100" y="10" width="40" height="40" fill="lightblue" />
+    <rect x="55" y="55" width="40" height="40" fill="white" stroke="red" stroke-width="2" />
+    <text x="75" y="75" text-anchor="middle" dominant-baseline="middle" fill="red">0</text>
+    <rect x="100" y="55" width="40" height="40" fill="lightblue" />
+    <rect x="100" y="100" width="40" height="40" fill="white" stroke="red" stroke-width="2" />
+    <text x="120" y="120" text-anchor="middle" dominant-baseline="middle" fill="red">0</text>
+  </g>
+  
+  <g transform="translate(700, 50)">
+    <rect x="0" y="0" width="150" height="150" fill="none" stroke="black" />
+    <text x="-40" y="75" text-anchor="middle" dominant-baseline="middle">Q' =</text>
+    <text x="75" y="175" text-anchor="middle">Upper Triangular Q</text>
+    
+    <!-- Upper triangular elements -->
+    <rect x="10" y="10" width="40" height="40" fill="white" stroke="red" stroke-width="2" />
+    <text x="30" y="30" text-anchor="middle" dominant-baseline="middle" fill="red">0</text>
+    <rect x="55" y="10" width="40" height="40" fill="lightgreen" />
+    <rect x="100" y="10" width="40" height="40" fill="lightgreen" />
+    <rect x="55" y="55" width="40" height="40" fill="white" stroke="red" stroke-width="2" />
+    <text x="75" y="75" text-anchor="middle" dominant-baseline="middle" fill="red">0</text>
+    <rect x="100" y="55" width="40" height="40" fill="lightgreen" />
+    <rect x="100" y="100" width="40" height="40" fill="white" stroke="red" stroke-width="2" />
+    <text x="120" y="120" text-anchor="middle" dominant-baseline="middle" fill="red">0</text>
+  </g>
+  
+  <!-- Contiguous memory representation -->
+  <g transform="translate(50, 400)">
+    <text x="350" y="-20" text-anchor="middle" font-size="18" font-weight="bold">Contiguous Memory Storage</text>
+    
+    <!-- Matrix representation -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="150" height="150" fill="none" stroke="black" />
+      <text x="-30" y="75" text-anchor="middle" dominant-baseline="middle">P' =</text>
+      
+      <!-- Matrix elements -->
+      <g transform="translate(10, 10)">
+        <rect x="0" y="0" width="40" height="40" fill="white" stroke="red" stroke-width="2" />
+        <text x="20" y="20" text-anchor="middle" dominant-baseline="middle" fill="red">0</text>
+      </g>
+      <g transform="translate(55, 10)">
+        <rect x="0" y="0" width="40" height="40" fill="lightblue" stroke="black" />
+        <text x="20" y="25" text-anchor="middle" dominant-baseline="middle">P'₁₂</text>
+      </g>
+      <g transform="translate(100, 10)">
+        <rect x="0" y="0" width="40" height="40" fill="lightblue" stroke="black" />
+        <text x="20" y="25" text-anchor="middle" dominant-baseline="middle">P'₁₃</text>
+      </g>
+      <g transform="translate(55, 55)">
+        <rect x="0" y="0" width="40" height="40" fill="white" stroke="red" stroke-width="2" />
+        <text x="20" y="20" text-anchor="middle" dominant-baseline="middle" fill="red">0</text>
+      </g>
+      <g transform="translate(100, 55)">
+        <rect x="0" y="0" width="40" height="40" fill="lightblue" stroke="black" />
+        <text x="20" y="25" text-anchor="middle" dominant-baseline="middle">P'₂₃</text>
+      </g>
+      <g transform="translate(100, 100)">
+        <rect x="0" y="0" width="40" height="40" fill="white" stroke="red" stroke-width="2" />
+        <text x="20" y="20" text-anchor="middle" dominant-baseline="middle" fill="red">0</text>
+      </g>
+    </g>
+    
+    <!-- Memory representation -->
+    <g transform="translate(250, 50)">
+      <rect x="0" y="0" width="500" height="50" fill="none" stroke="black" />
+      
+      <!-- Memory cells -->
+      <g transform="translate(10, 10)">
+        <rect x="0" y="0" width="70" height="30" fill="lightblue" stroke="black" />
+        <text x="35" y="15" text-anchor="middle" dominant-baseline="middle">P'₁₂</text>
+      </g>
+      <g transform="translate(80, 10)">
+        <rect x="0" y="0" width="70" height="30" fill="lightblue" stroke="black" />
+        <text x="35" y="15" text-anchor="middle" dominant-baseline="middle">P'₁₃</text>
+      </g>
+      <g transform="translate(150, 10)">
+        <rect x="0" y="0" width="70" height="30" fill="lightblue" stroke="black" />
+        <text x="35" y="15" text-anchor="middle" dominant-baseline="middle">P'₂₃</text>
+      </g>
+      
+      <!-- Arrows and labels 
+      <path d="M 40 -20 L 40 0" fill="none" stroke="black" marker-end="url(#arrowhead)" />
+      <path d="M 185 -20 L 185 0" fill="none" stroke="black" marker-end="url(#arrowhead)" />
+      <text x="75" y="-30" text-anchor="middle">First row</text>
+      <text x="185" y="-30" text-anchor="middle">Second row</text>
+      -->
+    </g>
+    
+    <!-- Arrow marker definition -->
+    <defs>
+      <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+        <polygon points="0 0, 10 3.5, 0 7" />
+      </marker>
+    </defs>
+  </g>
+</svg>

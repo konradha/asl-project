@@ -1,0 +1,48 @@
+<svg width="800" height="400"  xmlns="http://www.w3.org/2000/svg">
+
+      <text x="400" y="30" text-anchor="middle" font-size="18" font-weight="bold">Memory Layout Transformation for Vectorization</text>
+      
+      <text x="200" y="70" text-anchor="middle" font-size="16" font-weight="bold">Original Layout</text>
+      <rect x="50" y="80" width="700" height="50" fill="none" stroke="#333333"/>
+      <text x="80" y="110" text-anchor="middle" font-size="14">y0,0</text>
+      <text x="160" y="110" text-anchor="middle" font-size="14">y0,1</text>
+      <text x="240" y="110" text-anchor="middle" font-size="14">y1,0</text>
+      <text x="320" y="110" text-anchor="middle" font-size="14">y1,1</text>
+      <text x="400" y="110" text-anchor="middle" font-size="14">...</text>
+      <text x="480" y="110" text-anchor="middle" font-size="14">yn,0</text>
+      <text x="560" y="110" text-anchor="middle" font-size="14">yn,1</text>
+
+      <!-- Vectorized Layout -->
+      <text x="200" y="210" text-anchor="middle" font-size="16" font-weight="bold">Vectorized Layout</text>
+      <rect x="50"  y="220" width="700" height="50" fill="none" stroke="#333333"/>
+      <text x="80"  y="250" text-anchor="middle" font-size="14">y0,0</text>
+      <text x="160" y="250" text-anchor="middle" font-size="14">y1,0</text>
+      <text x="240" y="250" text-anchor="middle" font-size="14">...</text>
+      <text x="320" y="250" text-anchor="middle" font-size="14">yn,0</text>
+      <text x="400" y="250" text-anchor="middle" font-size="14">y0,1</text>
+      <text x="480" y="250" text-anchor="middle" font-size="14">y1,1</text>
+      <text x="560" y="250" text-anchor="middle" font-size="14">...</text>
+      <text x="640" y="250" text-anchor="middle" font-size="14">yn,1</text>
+
+      <!-- Transformation Arrows -->
+      <path d="M100,140 L100,190" stroke="#4a4a4a" stroke-width="2" marker-end="url(#arrowhead)"/>
+      <path d="M500,140 L500,190" stroke="#4a4a4a" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+      <!-- AVX-512 Registers -->
+      <rect x="50" y="280" width="300" height="40" fill="#e6f3ff" stroke="#333333"/>
+      <text x="200" y="305" text-anchor="middle" font-size="14">y0,0  y1,0  y2,0  y3,0</text>
+      <text x="400" y="305" text-anchor="middle" font-size="14" font-weight="bold">   AVX Register</text>
+
+      <rect x="50" y="330" width="300" height="40" fill="#e6fff3" stroke="#333333"/>
+      <text x="200" y="355" text-anchor="middle" font-size="14">y0,1  y1,1  y2,1  y3,1</text>
+      <text x="400" y="355" text-anchor="middle" font-size="14" font-weight="bold">   AVX Register</text>
+      <!-- Explanation -->
+      <text x="400" y="390" text-anchor="middle" font-size="14">This layout allows loading 4 y_,0 or y_,1 values into one register without permutations or shuffling</text>
+
+      <!-- Arrow Marker -->
+      <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+          <polygon points="0 0, 10 3.5, 0 7" fill="#4a4a4a" />
+        </marker>
+      </defs>
+</svg>
