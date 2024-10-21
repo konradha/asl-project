@@ -5,7 +5,7 @@ is the de facto standard for visualizing high dimensional
 datasets but its original, still widely used variant is lacking
 fast implementations. We were tasked to make this _fast_ in
 an academic ([literally](https://acl.inf.ethz.ch/teaching/fastcode/2024/)) setting on a the
-single-core x86 Skylake architecture. Obviously, there are
+single-core x86 Skylake architecture. There are
 lots of [smart ways](https://lvdmaaten.github.io/tsne/) to accelerate
 and program this algorithm. The following will thus explore very
 architecture- and compiler-specific performance of our optimizations. We do not introduce
